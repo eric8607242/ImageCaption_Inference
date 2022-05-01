@@ -1,10 +1,10 @@
 # DLCT_ImageCaption_Inference
 
-This repository is an unofficial **model inference** codebase for the papr Dual-Level Collaborative Transformer for Image Captioning (CVPR2021).
+This repository is an unofficial **model inference** codebase for the papr [Dual-Level Collaborative Transformer for Image Captioning (AAAI2021)](https://arxiv.org/pdf/2101.06462.pdf).
 
 In this repo, we incorporate the repo [image-captioning-DLCT](https://github.com/luo3300612/image-captioning-DLCT) and [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa) to make image caption model inference more easily. 
 
-***Given the image path, yYou can get the image caption sentence with only two function calls (`initialize_model_states` and `inference`)!***
+***Given the image path, you can get the image caption sentence with only two function calls (`initialize_model_states` and `inference`)!***
 
 The steps of this inference repo are show as follows:
 1. grid features extractions from the repo [original_script](https://github.com/facebookresearch/grid-feats-vqa)
@@ -28,9 +28,9 @@ python3 -m spacy download en_core_web_sm
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git@ffff8ac'
 ```
 
-# Get Start
+# Getted start
 ## Inference
-```
+```python
 from image_caption_lib import initialize_model_states, inference
 
 path_to_extract_model_weight = "..."
